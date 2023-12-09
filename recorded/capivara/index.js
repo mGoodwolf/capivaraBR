@@ -1,15 +1,7 @@
 let interval = 0;
 let sleep = 1000
 print('Hello World ' + new Date().toISOString())
-// timeout(sleep, interval, () => {
-//     print('1 ' + new Date().toISOString())
-//     timeout(sleep, interval, () => {
-//         print('2 ' + new Date().toISOString())
-//         timeout(sleep, interval, () => {
-//             print('3 ' + new Date().toISOString())
-//         })
-//     })
-// })
+
 
 const setTimeout = (ms, cb) => timeout(ms, 0, cb);
 const setInterval = (ms, cb) => timeout(0, ms, cb);
